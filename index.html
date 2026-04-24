@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+    <title>Cacao & Technology</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="From hand-carved stone tools to AI-powered quality control... tracing the arc of innovation in the cacao industry."/>
+    <meta property="og:title" content="Cacao & Technology"/>
+    <meta property="og:image" content="https://cacao.andreadallara.com/assets/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+</head>
+
+<body class="font-body antialiased text-[#41454c] bg-[#FCFCFC] dark:text-[#FFFFFF] dark:bg-[#031022]">
+
+    <!-- Navbar -->
+    <section class="bg-white fixed w-full shadow dark:shadow-slate-800 dark:bg-[#031022]" style="top:0em; z-index:50" role="banner">
+        <div class="container flex items-center justify-between mx-auto overflow-hidden font-medium max-w-7xl h-16 px-4 md:overflow-visible md:flex-row md:justify-around lg:justify-center">
+            <!-- Left nav links -->
+            <nav class="items-start justify-center w-full space-x-6 text-center text-sm hidden md:w-2/3 md:mt-0 md:flex-row md:items-center md:flex md:justify-start lg:space-x-8" aria-label="Primary navigation — left">
+                <a class="inline-block w-full py-2 mx-0 font-medium text-left md:w-auto md:px-0 md:mx-2 hover:text-primary-500 lg:mx-3 md:text-center" href="#early-tools">Early Tools</a>
+                <a class="inline-block w-full py-2 mx-0 font-medium text-left md:w-auto md:px-0 md:mx-2 hover:text-primary-500 lg:mx-3 md:text-center" href="#traditional-processing">Processing</a>
+                <a class="inline-block w-full py-2 mx-0 font-medium text-left md:w-auto md:px-0 md:mx-2 hover:text-primary-500 lg:mx-3 md:text-center" href="#industrial-timeline">Industry</a>
+            </nav>
+            <!-- Center title -->
+            <div class="flex items-center justify-start h-full pr-4 md:w-2/3 md:justify-center md:pr-0">
+                <a class="py-4 flex md:py-0" href="#hero">
+                    <h1 class="text-2xl font-bold tracking-tighter text-primary-500">Cacao &amp; Technology</h1>
+                </a>
+            </div>
+            <!-- Right nav links -->
+            <nav class="items-start justify-center w-full space-x-6 text-center text-sm hidden md:w-2/3 md:mt-0 md:flex-row md:items-center md:flex md:justify-end lg:space-x-8" aria-label="Primary navigation — right">
+                <a class="inline-block w-full py-2 mx-0 font-medium text-left md:w-auto md:px-0 md:mx-2 hover:text-primary-500 lg:mx-3 md:text-center" href="#robotics">Robotics</a>
+                <a class="inline-block w-full py-2 mx-0 font-medium text-left md:w-auto md:px-0 md:mx-2 hover:text-primary-500 lg:mx-3 md:text-center" href="#computer-vision">AI &amp; Vision</a>
+                <a class="inline-block w-full py-2 mx-0 font-medium text-left md:w-auto md:px-0 md:mx-2 hover:text-primary-500 lg:mx-3 md:text-center" href="#looking-ahead">Future</a>
+            </nav>
+            <!-- Mobile hamburger -->
+            <div class="md:hidden">
+                <button onclick="document.getElementById('mobile-menu').style.display = document.getElementById('mobile-menu').style.display === 'block' ? 'none' : 'block'" aria-label="Toggle navigation menu">
+                    <span class="w-full text-3xl md:hidden">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </span>
+                </button>
+                <ul id="mobile-menu" style="display:none" class="absolute text-gray-900 mt-2 origin-top-right divide-y divide-gray-100 shadow-lg left-px right-px pl-2 pt-5 pb-4 bg-white dark:bg-black dark:text-slate-100 dark:divide-gray-700 dark:shadow-gray-800">
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#hero">Overview</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#early-tools">Early Tools</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#traditional-processing">Traditional Processing</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#industrial-timeline">Industrial Timeline</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#twentieth-century">20th-Century</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#modern-automation">Modern Automation</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#robotics">Robotics</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#digital-monitoring">Digital Monitoring</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#computer-vision">Computer Vision</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#ai-qc">AI-Driven QC</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#looking-ahead">Looking Ahead</a></li>
+                    <li class="group flex items-center w-full px-2 py-2 text-sm"><a href="#contact">Questions</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spacer -->
+    <div class="h-16"></div>
+
+    <!-- Slide 1 -->
+    <div class="md:py-16" id="hero">
+        <div class="max-w-7xl mx-auto flex items-center gap-6 px-5 flex-col py-14 md:flex-row lg:py-2 xl:py-0">
+            <div class="flex flex-col gap-7 lg:w-8/12 xl:w-3/5">
+                <h1 class="font-bold tracking-tight dark:text-slate-100 text-4xl text-slate-900 lg:text-5xl">The Evolution of Technology in the Cacao Industry</h1>
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500">Ancient Stone Tools to Artificial Intelligence</p>
+                <p class="text-base lg:text-lg 2xl:text-gray-500">Technology has reshaped cacao production from its earliest beginnings, evolving from hand‑carved stone tools and fire‑pit roasting into a system driven by automation, sensing, and intelligent decision‑making. What began as a fully manual craft practiced by Mesoamerican cultures has grown into a global industry supported by optical sorters, robotic pollinators, IoT field sensors, and AI models that grade beans and forecast supply‑chain disruptions. Each stage of the value chain has been touched by innovation, gradually replacing guesswork with precision and enabling farmers, processors, and manufacturers to produce higher‑quality chocolate with greater consistency and sustainability.</p>
+            </div>
+            <div class="w-full lg:w-7/12">
+                <img class="sm:mx-9 sm:-my-16 md:mx-0 md:my-0 lg:w-full" src="./assets/hero-cacao.png" alt="Cacao pods growing on a Theobroma cacao tree, representing the starting point of the cacao value chain" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 2 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="early-tools" role="region" aria-labelledby="heading-early-tools">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 id="heading-early-tools" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">Early Mesoamerican and Spanish Tools</h2>
+            <p class="text-base text-gray-500 lg:text-lg">Ancient innovations that shaped the art of cacao preparation</p>
+        </div>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:max-w-7xl xl:mx-auto">
+            <!-- Stone Metates & Manos -->
+            <div>
+                <img class="object-cover w-full h-56 mb-6 rounded-lg shadow-lg" src="./assets/mano-metate.jpg" alt="Ancient stone metate and mano used by Maya and Aztec civilizations to grind cacao beans" />
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Stone Metates &amp; Manos</h3>
+                <p class="text-gray-500 mx-5 my-5">Flat grinding stones used by Maya and Aztec civilizations to crush roasted cacao beans into a coarse paste.</p>
+            </div>
+            <!-- Ceramic Vessels -->
+            <div>
+                <img class="object-cover w-full h-56 mb-6 rounded-lg shadow-lg" src="./assets/ceramic-vessels.jpg" alt="Tall spouted ceramic pots used for frothing and serving cacao drinks during Mesoamerican sacred rituals" />
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Ceramic Vessels</h3>
+                <p class="text-gray-500 mx-5 my-5">Tall, spouted pots used for frothing and serving cacao drinks during sacred rituals, pouring from height to create the prized foam layer.</p>
+            </div>
+            <!-- Fire-Pit Roasting -->
+            <div>
+                <img class="object-cover w-full h-56 mb-6 rounded-lg shadow-lg" src="./assets/fire-pit-roasting.webp" alt="Open-flame clay hearths used to roast raw cacao beans over carefully tended fires" />
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Fire-Pit Roasting</h3>
+                <p class="text-gray-500 mx-5 my-5">Open-flame clay hearths used to roast raw cacao beans over carefully tended fires, developing the rich flavor compounds essential to chocolate's taste.</p>
+            </div>
+            <!-- Wooden Molinillos -->
+            <div>
+                <img class="object-cover w-full h-56 mb-6 rounded-lg shadow-lg" src="./assets/molinillo.jpg" alt="Hand-carved wooden molinillo whisk spun between the palms to froth cacao beverages" />
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Wooden Molinillos</h3>
+                <p class="text-gray-500 mx-5 my-5">Hand-carved wooden whisks spun rapidly between the palms to create the prized frothy texture in cacao beverages, a technique still used today.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 3 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 md:py-14 lg:max-w-screen-xl lg:px-8 lg:py-12" id="traditional-processing" role="region" aria-labelledby="heading-traditional-processing">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 id="heading-traditional-processing" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">Traditional Cacao Processing</h2>
+            <p class="text-base text-gray-500 lg:text-lg">Traditional Cacao Processing: A centuries-old pipeline of hand labor and natural processes that transforms raw cacao pods into rich, aromatic chocolate paste.</p>
+        </div>
+        <div class="mb-10 border-t border-b divide-y xl:max-w-7xl xl:mx-auto">
+
+            <!-- Step 1: Harvesting -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Step 1</span>
+                        <p>Harvesting</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Harvesting</p>
+                    </div>
+                    <p class="lg:mr-10">Cacao pods hand-cut from trees with machetes at peak ripeness.</p>
+                </div>
+            </div>
+
+            <!-- Step 2: Fermentation -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Step 2</span>
+                        <p>Fermentation</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Fermentation</p>
+                    </div>
+                    <p class="lg:mr-10">Beans piled in wooden boxes, covered with banana leaves for 5-7 days.</p>
+                </div>
+            </div>
+
+            <!-- Step 3: Sun Drying -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Step 3</span>
+                        <p>Sun Drying</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Sun Drying</p>
+                    </div>
+                    <p class="lg:mr-10">Beans spread on mats under direct sunlight for 1-2 weeks.</p>
+                </div>
+            </div>
+
+            <!-- Step 4: Hand Sorting -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Step 4</span>
+                        <p>Hand Sorting</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Hand Sorting</p>
+                    </div>
+                    <p class="lg:mr-10">Workers manually inspect and remove defective or moldy beans.</p>
+                </div>
+            </div>
+
+            <!-- Step 5: Roasting & Grinding -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Step 5</span>
+                        <p>Roasting &amp; Grinding</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Roasting &amp; Grinding</p>
+                    </div>
+                    <p class="lg:mr-10">Beans roasted over fire, then ground by hand with stone tools.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 4 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 md:py-14 lg:max-w-screen-xl lg:px-8 lg:py-12" id="industrial-timeline" role="region" aria-labelledby="heading-industrial-timeline">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <p class="text-xs font-semibold tracking-wide uppercase text-primary-500">The Age of Machines</p>
+            <h2 id="heading-industrial-timeline" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">Industrial Revolution Mechanization</h2>
+        </div>
+        <div class="mb-10 border-t border-b divide-y xl:max-w-7xl xl:mx-auto">
+
+            <!-- 1828 -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">1828</span>
+                        <p>Netherlands</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Van Houten's Cocoa Press</p>
+                    </div>
+                    <p class="lg:mr-10">Coenraad Van Houten invented the hydraulic press to separate cocoa butter from cocoa solids, enabling mass production of cocoa powder.</p>
+                </div>
+            </div>
+
+            <!-- 1847 -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">1847</span>
+                        <p>England</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">First Chocolate Bar</p>
+                    </div>
+                    <p class="lg:mr-10">Joseph Fry created the first modern chocolate bar by recombining cocoa powder, sugar, and melted cocoa butter into a moldable paste.</p>
+                </div>
+            </div>
+
+            <!-- 1879 -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">1879</span>
+                        <p>Switzerland</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Conching Machine</p>
+                    </div>
+                    <p class="lg:mr-10">Rodolphe Lindt developed the conche, which continuously mixed chocolate for hours, producing a smooth, velvety texture previously unachievable.</p>
+                </div>
+            </div>
+
+            <!-- 1900s -->
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">1900s</span>
+                        <p>Global</p>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Steam-Powered Roasters</p>
+                    </div>
+                    <p class="lg:mr-10">Large-scale drum roasters replaced open-flame methods, enabling uniform roasting of tons of cacao beans per day with consistent quality.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 5 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="twentieth-century" role="region" aria-labelledby="heading-twentieth-century">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <p class="text-xs font-semibold tracking-wide uppercase text-primary-500">1900s &ndash; 2000s</p>
+            <h2 id="heading-twentieth-century" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">20th-Century Innovations</h2>
+        </div>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-7xl xl:mx-auto">
+            <div>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Continuous Conching</h3>
+                <p class="text-gray-500 mx-5 my-5">Automated conching machines reduced processing time from days to hours while maintaining texture quality.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Enrobing Technology</h3>
+                <p class="text-gray-500 mx-5 my-5">Conveyor-based enrobers coated confections in uniform chocolate layers at industrial speed.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Spray Drying</h3>
+                <p class="text-gray-500 mx-5 my-5">Atomizes liquid cocoa into fine powder for instant cocoa mixes and beverages.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Programmable Logic Controllers (PLCs)</h3>
+                <p class="text-gray-500 mx-5 my-5">Early digital controls enabled precise temperature and timing management in roasting and tempering.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Refrigerated Transport</h3>
+                <p class="text-gray-500 mx-5 my-5">Cold-chain logistics allowed global distribution of heat-sensitive chocolate products.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 6 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="modern-automation" role="region" aria-labelledby="heading-modern-automation">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <p class="text-xs font-semibold tracking-wide uppercase text-primary-500">Factory Automation</p>
+            <h2 id="heading-modern-automation" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">Modern Automation</h2>
+            <p class="text-base text-gray-500 lg:text-lg">Cutting-edge systems that bring unprecedented precision, speed, and consistency to every stage of production.</p>
+        </div>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:max-w-7xl xl:mx-auto">
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500 my-2 mx-2">Real-Time</p>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">SCADA Systems</h3>
+                <p class="text-gray-500 mx-5 my-5">Supervisory control enables real-time monitoring of entire production lines from a single centralized dashboard.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500 my-2 mx-2">Quality Visualized</p>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Optical Sorters</h3>
+                <p class="text-gray-500 mx-5 my-5">Machine-vision color sorters process tons of beans per hour, using NIR and camera systems to detect and reject defects.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500 my-2 mx-2">&plusmn;0.5&deg;C</p>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Precision Tempering</h3>
+                <p class="text-gray-500 mx-5 my-5">Automated tempering machines control chocolate crystallization within half a degree for consistent snap and gloss.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500 my-2 mx-2">End-to-End</p>
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Bean-to-Bar Factories</h3>
+                <p class="text-gray-500 mx-5 my-5">Highly automated facilities handle every step with minimal human intervention.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 7 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="robotics" role="region" aria-labelledby="heading-robotics">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 id="heading-robotics" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">Robotics in the Cacao Industry</h2>
+        </div>
+
+        <!-- Factory Robotics -->
+        <h3 class="mb-6 text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl xl:max-w-7xl xl:mx-auto">Factory Robotics</h3>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-7xl xl:mx-auto mb-14">
+            <div>
+                <h4 class="mb-2 text-lg font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100">Collaborative Robots (Cobots)</h4>
+                <p class="text-gray-500 mx-5 my-5">Handle repetitive tasks like wrapping, labeling, and palletizing finished chocolate products alongside human workers.</p>
+            </div>
+            <div>
+                <h4 class="mb-2 text-lg font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100">Automated Guided Vehicles</h4>
+                <p class="text-gray-500 mx-5 my-5">AGVs autonomously transport raw cacao materials between processing stations, reducing manual handling and improving workflow efficiency.</p>
+            </div>
+            <div>
+                <h4 class="mb-2 text-lg font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100">Precision Robotic Arms</h4>
+                <p class="text-gray-500 mx-5 my-5">Perform exact ingredient dosing, mixing, and chocolate molding with sub-millimeter accuracy for consistent product quality.</p>
+            </div>
+        </div>
+
+        <!-- Field Robotics -->
+        <h3 class="mb-6 text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl xl:max-w-7xl xl:mx-auto">Field Robotics</h3>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-7xl xl:mx-auto">
+            <div>
+                <h4 class="mb-2 text-lg font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100">Autonomous Pollinators</h4>
+                <p class="text-gray-500 mx-5 my-5">Robotic pollinators assist with the delicate hand-pollination of cacao flowers, aiming to boost pod set rates.</p>
+            </div>
+            <div>
+                <h4 class="mb-2 text-lg font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100">Agricultural Drones</h4>
+                <p class="text-gray-500 mx-5 my-5">Survey plantation health from above, apply targeted pesticide sprays to affected areas, and map terrain for optimized farm management.</p>
+            </div>
+            <div>
+                <h4 class="mb-2 text-lg font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100">Robotic Pruning Prototypes</h4>
+                <p class="text-gray-500 mx-5 my-5">Automated pruning systems trim cacao trees to optimize canopy structure, improving sunlight exposure and maximizing pod yield.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 8 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="digital-monitoring" role="region" aria-labelledby="heading-digital-monitoring">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <p class="text-xs font-semibold tracking-wide uppercase text-primary-500">Transparency &amp; Precision</p>
+            <h2 id="heading-digital-monitoring" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">Digital Monitoring &amp; Traceability</h2>
+        </div>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:max-w-7xl xl:mx-auto">
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">IoT Sensor Networks</h3>
+                <p class="text-gray-500 mx-5 my-5">Wireless sensors monitor soil moisture, temperature, humidity, and rainfall across cacao farms in real time, enabling data-driven agronomy.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Satellite Imagery</h3>
+                <p class="text-gray-500 mx-5 my-5">Remote sensing tracks deforestation, farm boundaries, and crop health at scale across cocoa-growing regions worldwide.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Blockchain Traceability</h3>
+                <p class="text-gray-500 mx-5 my-5">Immutable ledger technology traces every batch of beans from farm to finished product, verifying fair-trade and sustainability claims.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Mobile Farmer Platforms</h3>
+                <p class="text-gray-500 mx-5 my-5">Smartphone apps connect smallholder farmers to market prices, weather forecasts, and best-practice agronomic advice.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 9 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 md:py-14 lg:max-w-screen-xl lg:px-8 lg:py-12" id="computer-vision" role="region" aria-labelledby="heading-computer-vision">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <p class="text-xs font-semibold tracking-wide uppercase text-primary-500">Precision Agriculture</p>
+            <h2 id="heading-computer-vision" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">Computer Vision for Cacao Tree Health</h2>
+        </div>
+        <div class="mb-10 border-t border-b divide-y xl:max-w-7xl xl:mx-auto">
+
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Imaging</span>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Multispectral &amp; Hyperspectral Imaging</p>
+                    </div>
+                    <p class="lg:mr-10">Cameras capture light beyond the visible spectrum to detect early signs of disease stress invisible to the human eye.</p>
+                </div>
+            </div>
+
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Deep Learning</span>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Convolutional Neural Networks (CNNs)</p>
+                    </div>
+                    <p class="lg:mr-10">Deep learning models trained on thousands of leaf images classify diseases like black pod rot, swollen shoot virus, and frosty pod with over 90% accuracy.</p>
+                </div>
+            </div>
+
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">3D Mapping</span>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">LiDAR Canopy Mapping</p>
+                    </div>
+                    <p class="lg:mr-10">3D laser scanning measures tree canopy volume and structure, identifying under-performing trees needing intervention.</p>
+                </div>
+            </div>
+
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Pest Control</span>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Automated Pest Identification</p>
+                    </div>
+                    <p class="lg:mr-10">AI-powered camera traps identify and count pest species such as cocoa pod borers, triggering targeted responses.</p>
+                </div>
+            </div>
+
+            <div class="grid py-8 sm:grid-cols-4">
+                <div class="mb-4 sm:mb-0">
+                    <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-primary-500">Aerial</span>
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <div class="mb-3">
+                        <p class="inline-block transition-colors duration-200 text-3xl font-extrabold leading-none text-slate-900 dark:text-slate-100">Drone-Based Surveys</p>
+                    </div>
+                    <p class="lg:mr-10">UAVs equipped with multispectral cameras perform rapid whole-plantation health assessments in hours rather than weeks.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 10 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="ai-qc" role="region" aria-labelledby="heading-ai-qc">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 id="heading-ai-qc" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">AI-Driven Quality Control &amp; Supply-Chain Optimization</h2>
+            <p class="text-base text-gray-500 lg:text-lg">Intelligent systems that grade, inspect, forecast, and simulate</p>
+        </div>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:max-w-7xl xl:mx-auto">
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Machine Learning Bean Grading</h3>
+                <p class="text-gray-500 mx-5 my-5">ML algorithms analyze bean size, color, moisture, and fermentation level from high-resolution images, grading beans consistently and faster than human inspectors.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Near-Infrared (NIR) Spectroscopy</h3>
+                <p class="text-gray-500 mx-5 my-5">Non-destructive scanning determines fat content, moisture, and contamination levels in seconds, integrated into production-line quality gates.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Demand Forecasting</h3>
+                <p class="text-gray-500 mx-5 my-5">AI models analyze historical sales, seasonal trends, and market signals to predict demand, reducing overproduction and waste across the supply chain.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <h3 class="text-xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl mx-5 mt-5">Supply-Chain Digital Twins</h3>
+                <p class="text-gray-500 mx-5 my-5">Virtual models of the entire supply chain simulate logistics scenarios, optimize routes, and anticipate disruptions before they occur.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Slide 11 -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="looking-ahead" role="region" aria-labelledby="heading-looking-ahead">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <p class="text-xs font-semibold tracking-wide uppercase text-primary-500">Looking Ahead</p>
+            <h2 id="heading-looking-ahead" class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl md:mx-auto">The Future of Cacao Technology</h2>
+            <p class="text-base text-gray-500 lg:text-lg">From hand-carved stone tools to AI-powered quality control, technology has transformed every link in the cacao value chain. The next frontier promises to make chocolate production more sustainable, equitable, and delicious than ever.</p>
+        </div>
+        <div class="grid gap-10 row-gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-7xl xl:mx-auto">
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500 my-2 mx-2">Precision Fermentation</p>
+                <p class="text-gray-500 mx-5 my-5">Lab-crafted cocoa flavors without deforestation.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500 my-2 mx-2">Gene-Edited Resistance</p>
+                <p class="text-gray-500 mx-5 my-5">Disease-proof trees for resilient harvests.</p>
+            </div>
+            <div class="rounded-lg shadow-lg p-6 bg-white dark:bg-slate-800">
+                <p class="text-xs font-semibold tracking-wide uppercase text-primary-500 my-2 mx-2">Autonomous Farms</p>
+                <p class="text-gray-500 mx-5 my-5">Fully self-managing smart plantations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200 dark:border-gray-700"></div>
+
+    <!-- Footer -->
+    <div class="text-center py-1 max-w-7xl mx-auto border-t border-gray-200 dark:border-gray-600">
+        <p class="w-4/5 mx-auto my-5 text-sm leading-5 h-4">© 2026, Andrea Dall'Ara. Some Rights Reserved</p>
+    </div>
+</body>
+</html>
